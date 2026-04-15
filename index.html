@@ -1841,6 +1841,27 @@
         }
 
         @media (max-width: 768px) {
+
+            .portrait-frame {
+                max-width: 260px;
+            }
+
+            .affiliation-badges {
+                bottom: 5px;
+                left: 5px;
+                gap: 6px;
+            }
+
+            .affil-logo {
+                font-size: 10px;
+                padding: 4px 6px;
+            }
+
+            .affil-logo img {
+                width: 14px;
+                height: 14px;
+            }
+
             .nav-links {
                 display: none;
                 position: absolute;
@@ -2034,8 +2055,15 @@
         }
 
         @keyframes musicPulse {
-            0%, 100% { box-shadow: 0 4px 20px rgba(204, 0, 0, 0.15); }
-            50% { box-shadow: 0 4px 28px rgba(204, 0, 0, 0.45); }
+
+            0%,
+            100% {
+                box-shadow: 0 4px 20px rgba(204, 0, 0, 0.15);
+            }
+
+            50% {
+                box-shadow: 0 4px 28px rgba(204, 0, 0, 0.45);
+            }
         }
 
         /* Music bars animation inside button */
@@ -2053,14 +2081,34 @@
             animation: barBounce 0.8s ease-in-out infinite alternate;
         }
 
-        .music-bars .bar:nth-child(1) { height: 8px; animation-delay: 0s; }
-        .music-bars .bar:nth-child(2) { height: 14px; animation-delay: 0.2s; }
-        .music-bars .bar:nth-child(3) { height: 10px; animation-delay: 0.4s; }
-        .music-bars .bar:nth-child(4) { height: 16px; animation-delay: 0.1s; }
+        .music-bars .bar:nth-child(1) {
+            height: 8px;
+            animation-delay: 0s;
+        }
+
+        .music-bars .bar:nth-child(2) {
+            height: 14px;
+            animation-delay: 0.2s;
+        }
+
+        .music-bars .bar:nth-child(3) {
+            height: 10px;
+            animation-delay: 0.4s;
+        }
+
+        .music-bars .bar:nth-child(4) {
+            height: 16px;
+            animation-delay: 0.1s;
+        }
 
         @keyframes barBounce {
-            0% { transform: scaleY(0.4); }
-            100% { transform: scaleY(1); }
+            0% {
+                transform: scaleY(0.4);
+            }
+
+            100% {
+                transform: scaleY(1);
+            }
         }
 
         #music-toggle.paused .music-bars .bar {
@@ -2104,8 +2152,17 @@
         }
 
         @keyframes tapPulse {
-            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(204, 0, 0, 0.4); }
-            50% { transform: scale(1.08); box-shadow: 0 0 0 15px rgba(204, 0, 0, 0); }
+
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(204, 0, 0, 0.4);
+            }
+
+            50% {
+                transform: scale(1.08);
+                box-shadow: 0 0 0 15px rgba(204, 0, 0, 0);
+            }
         }
 
         #tap-prompt .tap-text {
